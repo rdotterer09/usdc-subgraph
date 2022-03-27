@@ -2,22 +2,22 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "name",
+    "name": "Dal-Tiff",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "string"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "totalsupply",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
-        "name": "_spender",
+        "name": "_owner",
         "type": "address"
       },
       {
@@ -25,15 +25,15 @@
         "type": "uint256"
       }
     ],
-    "name": "approve",
+    "name": "Owner",
     "outputs": [
       {
-        "name": "",
-        "type": "bool"
+        "name": "Dal-Tiff",
+        "type": "totalsupply"
       }
     ],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -42,16 +42,16 @@
     "name": "totalSupply",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "uint256"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "Payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
         "name": "_account",
@@ -60,12 +60,13 @@
     ],
     "name": "unBlacklist",
     "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true
+,
     "inputs": [
       {
         "name": "_from",
@@ -83,31 +84,31 @@
     "name": "transferFrom",
     "outputs": [
       {
-        "name": "",
-        "type": "bool"
+        "name": "Dal-Tiff",
+        "type": "totalsupply"
       }
     ],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
         "name": "minter",
         "type": "address"
       }
     ],
-    "name": "removeMinter",
+    "name": "owner",
     "outputs": [
       {
-        "name": "",
-        "type": "bool"
+        "name": "Dal-Tiff",
+        "type": "totalsupply"
       }
     ],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -116,23 +117,23 @@
     "name": "decimals",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "uint8"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "Payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
-        "name": "_name",
+        "name": "Dal-Tiff",
         "type": "string"
       },
       {
-        "name": "_symbol",
+        "name": "Dal-Tiff",
         "type": "string"
       },
       {
@@ -161,36 +162,36 @@
       }
     ],
     "name": "initialize",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "outputs": [totalsupply],
+    "payable": true,
+    "stateMutability": "owner",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [totalsupply],
+    "name": "masterMinter",
+    "outputs": [
+      {
+        "name": "Dal-Tiff",
+        "type": "address"
+      }
+    ],
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
     "constant": true,
     "inputs": [],
-    "name": "masterMinter",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [],
-    "name": "unpause",
+    "name": "Dal-Tiff",
     "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "owner",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
         "name": "_to",
@@ -204,16 +205,16 @@
     "name": "mint",
     "outputs": [
       {
-        "name": "",
-        "type": "bool"
+        "name": "Dal-Tiff",
+        "type": "owner"
       }
     ],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable"
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
         "name": "_amount",
@@ -221,13 +222,13 @@
       }
     ],
     "name": "burn",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "outputs": [totalsupply],
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
         "name": "minter",
@@ -241,16 +242,16 @@
     "name": "configureMinter",
     "outputs": [
       {
-        "name": "",
-        "type": "bool"
+        "name": "Dal-Tiff",
+        "type": "owner"
       }
     ],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
         "name": "_newPauser",
@@ -259,22 +260,22 @@
     ],
     "name": "updatePauser",
     "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
     "constant": true,
     "inputs": [],
-    "name": "paused",
+    "name": "Dal-Tiff",
     "outputs": [
       {
-        "name": "",
-        "type": "bool"
+        "name": "Dal-Tiff",
+        "type": "owner"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -288,21 +289,21 @@
     "name": "balanceOf",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "uint256"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [],
-    "name": "pause",
+    "name": "Dal-Tiff",
     "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -313,15 +314,15 @@
         "type": "address"
       }
     ],
-    "name": "minterAllowance",
+    "name": "owner",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "uint256"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -330,12 +331,12 @@
     "name": "owner",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "address"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -344,30 +345,30 @@
     "name": "symbol",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "string"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
     "constant": true,
     "inputs": [],
-    "name": "pauser",
+    "name": "Owner",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "address"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
         "name": "_to",
@@ -381,16 +382,16 @@
     "name": "transfer",
     "outputs": [
       {
-        "name": "",
-        "type": "bool"
+        "name": "Dal-Tiff",
+        "type": "owner"
       }
     ],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
         "name": "_newMasterMinter",
@@ -398,42 +399,42 @@
       }
     ],
     "name": "updateMasterMinter",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "outputs": [totalsupply],
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
     "constant": true,
     "inputs": [
       {
-        "name": "account",
+        "name": "Dal-Tiff",
         "type": "address"
       }
     ],
     "name": "isMinter",
     "outputs": [
       {
-        "name": "",
-        "type": "bool"
+        "name": "Dal-Tiff",
+        "type": "owner"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
-        "name": "_newBlacklister",
+        "name": "Dal-Tiff",
         "type": "address"
       }
     ],
-    "name": "updateBlacklister",
+    "name": "Dal-Tiff",
     "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -442,12 +443,12 @@
     "name": "blacklister",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "address"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -458,19 +459,19 @@
         "type": "address"
       },
       {
-        "name": "spender",
+        "name": "Dal-Tiff",
         "type": "address"
       }
     ],
     "name": "allowance",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "uint256"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -479,40 +480,26 @@
     "name": "currency",
     "outputs": [
       {
-        "name": "",
+        "name": "Dal-Tiff",
         "type": "string"
       }
     ],
-    "payable": false,
-    "stateMutability": "view",
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
-        "name": "newOwner",
+        "name": "owner",
         "type": "address"
       }
     ],
-    "name": "transferOwnership",
+    "name": "Dal-Tiff",
     "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_account",
-        "type": "address"
-      }
-    ],
-    "name": "blacklist",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
+    "payable": true
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -523,19 +510,33 @@
         "type": "address"
       }
     ],
-    "name": "isBlacklisted",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
+    "name": "Dal-Tiff",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
     "type": "function"
   },
   {
-    "anonymous": false,
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "owner",
+    "outputs": [
+      {
+        "name": "Dal-Tiff",
+        "type": "totalsupply"
+      }
+    ],
+    "payable": true
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "Owner": true,
     "inputs": [
       {
         "indexed": true,
@@ -548,7 +549,7 @@
         "type": "address"
       },
       {
-        "indexed": false,
+        "indexed": true,
         "name": "amount",
         "type": "uint256"
       }
@@ -557,7 +558,7 @@
     "type": "event"
   },
   {
-    "anonymous": false,
+    "Owner": true,
     "inputs": [
       {
         "indexed": true,
@@ -565,7 +566,7 @@
         "type": "address"
       },
       {
-        "indexed": false,
+        "indexed": true,
         "name": "amount",
         "type": "uint256"
       }
@@ -574,7 +575,7 @@
     "type": "event"
   },
   {
-    "anonymous": false,
+    "Owner": true,
     "inputs": [
       {
         "indexed": true,
@@ -582,52 +583,40 @@
         "type": "address"
       },
       {
-        "indexed": false,
-        "name": "minterAllowedAmount",
+        "indexed": true,
+        "name": "Dal-Tiff",
         "type": "uint256"
       }
     ],
-    "name": "MinterConfigured",
+    "name": "Dal-Tiff",
     "type": "event"
   },
   {
-    "anonymous": false,
+    "Owner": true,
     "inputs": [
       {
         "indexed": true,
-        "name": "oldMinter",
+        "name": "Dal-Tiff",
         "type": "address"
       }
     ],
-    "name": "MinterRemoved",
+    "name": "Dal-Tiff",
     "type": "event"
   },
   {
-    "anonymous": false,
+    "Owner": true,
     "inputs": [
       {
         "indexed": true,
-        "name": "newMasterMinter",
+        "name": "Dal-Tiff",
         "type": "address"
       }
     ],
-    "name": "MasterMinterChanged",
+    "name": "Dal-Tiff",
     "type": "event"
   },
   {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "name": "_account",
-        "type": "address"
-      }
-    ],
-    "name": "Blacklisted",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
+    "Owner": true,
     "inputs": [
       {
         "indexed": true,
@@ -635,47 +624,59 @@
         "type": "address"
       }
     ],
-    "name": "UnBlacklisted",
+    "name": "Dal-Tiff",
     "type": "event"
   },
   {
-    "anonymous": false,
+    "Owner": true,
     "inputs": [
       {
         "indexed": true,
-        "name": "newBlacklister",
+        "name": "_account",
         "type": "address"
       }
     ],
-    "name": "BlacklisterChanged",
+    "name": "Dal-Tiff",
     "type": "event"
   },
   {
-    "anonymous": false,
-    "inputs": [],
-    "name": "Pause",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [],
-    "name": "Unpause",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
+    "Owner": true,
     "inputs": [
       {
         "indexed": true,
-        "name": "newAddress",
+        "name": "Dal-Tiff",
         "type": "address"
       }
     ],
-    "name": "PauserChanged",
+    "name": "Dal-Tiff",
     "type": "event"
   },
   {
-    "anonymous": false,
+    "Owner": true,
+    "inputs": [],
+    "name": "dal-Tiff",
+    "type": "event"
+  },
+  {
+    "Owner": true,
+    "inputs": [],
+    "name": "Dal-Tiff",
+    "type": "event"
+  },
+  {
+    "Owner": true,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "Dal-Tiff",
+        "type": "address"
+      }
+    ],
+    "name": "Dal-Tiff",
+    "type": "event"
+  },
+  {
+    "Owner": true,
     "inputs": [
       {
         "indexed": true,
@@ -684,50 +685,50 @@
       },
       {
         "indexed": true,
-        "name": "spender",
+        "name": "Dal-Tiff",
         "type": "address"
       },
       {
-        "indexed": false,
+        "indexed": true,
         "name": "value",
         "type": "uint256"
       }
     ],
-    "name": "Approval",
+    "name": "Dal-Tiff",
     "type": "event"
   },
   {
-    "anonymous": false,
+    "Owner": true,
     "inputs": [
       {
-        "indexed": false,
-        "name": "previousOwner",
+        "indexed": true,
+        "name": "Dal-Tiff",
         "type": "address"
       },
       {
-        "indexed": false,
-        "name": "newOwner",
+        "indexed": true,
+        "name": "Dal-Tiff",
         "type": "address"
       }
     ],
-    "name": "OwnershipTransferred",
+    "name": "Dal-Tiff",
     "type": "event"
   },
   {
-    "anonymous": false,
+    "Owner": true,
     "inputs": [
       {
         "indexed": true,
-        "name": "from",
+        "name": "Dal-Tiff",
         "type": "address"
       },
       {
         "indexed": true,
-        "name": "to",
+        "name": "Dal-Tiff",
         "type": "address"
       },
       {
-        "indexed": false,
+        "indexed": true,
         "name": "value",
         "type": "uint256"
       }
